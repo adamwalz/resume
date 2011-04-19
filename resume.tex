@@ -1,10 +1,13 @@
 \documentclass{resume}
 
+\usepackage{comment}
+\usepackage{tabularx}
+
 \name{Adam Walz}
 \jobtitle{Programming Intern}
-\address{\parbox[t]{5cm}{844 E 200 S\\Salt Lake City, UT 84102}}
+\address{\parbox[t]{5cm}{554 E Street\\Salt Lake City, UT 84103}}
 \phone{(802) 232-9539}
-\email{adamwalz@me.com}
+\email{adam.walz@utah.edu}
 
 \begin{document}
 
@@ -13,9 +16,8 @@
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Education}
 
-{\bf Bachelors of Science, Computer Science} \hfill {\em June 2008 - Present} \\ 
-University of Utah, Salt Lake City, Utah \\
-GPA: 3.72 - In progress
+{\bf Bachelors of Science, Computer Science} \hfill {\em Expected Graduation Date: Spring 2012} \\ 
+University of Utah, Salt Lake City, Utah \hfill  GPA: 3.604
 
 \end{rSection}
 
@@ -25,28 +27,49 @@ GPA: 3.72 - In progress
 
 \begin{rSection}{Skills}
 
-Java, C++, C\#.NET, Object Oriented Programming, Matlab, GUI and Web Programming. SQL/mySQL, PHP, HTML, XHTML, JavaScript, CSS, A+ certified, Net+ certified, Cisco CCNA certified
+Java, C++, C\#.NET, Python, Objective-C, Object Oriented Programming, GUI and Web Programming. SQL, PHP, HTML, JavaScript, CSS, Matlab
 
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
+\includecomment{experienceTA}
+\excludecomment{experienceACCM}
+\includecomment{experienceJdIntern}
 
 \begin{rSection}{Related Experience}
 
+\begin{experienceTA}
+\begin{rSubsection}{University of Utah}{}{Teaching Assistant}{Salt Lake City, UT}
+\item Lecture recitation sections with 25 students in which programming concepts are put into practice
+\item One-on-one tutoring and debugging for students working on their assignments
+\item Grading of weekly programming and written assignments, as well as midterm and final exams
+\\
+\begin{tabularx}{\textwidth}{ X l }
+CS 1410 - Introduction to Computer Science & January 2011 - June 2011
+\end{tabularx}
+\end{rSubsection}
+\end{experienceTA}
+
+%------------------------------------------------
+
+\begin{experienceACCM}
 \begin{rSubsection}{Advanced Constructor Cost Management}{March 2007 - June 2009}{Web Designer}{Draper, UT}
 \item Developed dynamic architecture in order for the client to input time sensitive data without need for any HTML knowledge.
 \item Created a secure SQL database for the storage of customer data and inventory
 \item Ran statistical tests in order for the client to picture the success of the company
 \end{rSubsection}
+\end{experienceACCM}
 
 %------------------------------------------------
 
-\begin{rSubsection}{Skaggs Catholic Center}{August 2006 ? March 2009}{Technical Internship}{Draper, UT}
+\begin{experienceJdIntern}
+\begin{rSubsection}{Skaggs Catholic Center}{August 2006 - March 2009}{Technical Internship}{Draper, UT}
 \item Networking 450 Mac OS X terminals using a Linux server.
 \item Wiring of a new network teaching lab with Cisco routers for students use.
 \end{rSubsection}
+\end{experienceJdIntern}
 
 \end{rSection}
 
@@ -55,9 +78,12 @@ Java, C++, C\#.NET, Object Oriented Programming, Matlab, GUI and Web Programming
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Related Coursework}
-\begin{tabular}{ l l l }
-Computer Science I & Calculus I & Discrete Mathematics \\Computer Science II & Calculus II & Physics for Scientists and Engineers \\Software Practice I & Calculus III & Physics for Scientists and Engineers II \\Computer Organization and Design& Linear Algebra & \\
-\end{tabular}
+\begin{tabularx}{\textwidth}{ X X X }
+Computer Science I, II & Algorithms & Intro to Scientific Computing \\
+Software Practice I, II & Artificial Intelligence & Mobile Application Programming \\
+Computer Organization and Design & Database Systems & Discrete Mathematics \\
+Theory of Computation & Web Software Architecture & Calculus I, II, III \\
+\end{tabularx}
 
 \end{rSection}
 
@@ -65,11 +91,16 @@ Computer Science I & Calculus I & Discrete Mathematics \\Computer Science II & 
 %	HONORS / ACTIVITIES SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Related Coursework}
-\begin{tabular}{ l l }
-Computer Science Student Advisory Committee- Chair & 2009 - Present \\Excellence in Technology, Juan Diego Catholic High School & 2007 \\University of Utah High School Programming Challenge- 2nd Place & 2007 \\1st Place Linux+, Utah State High School LearnKey Challenge & 2007 \\
-2nd Place Cisco, Utah State High School LearnKey Challenge & 2007
-\end{tabular}
+\begin{rSection}{Honors and Leadership}
+\begin{tabularx}{\textwidth}{ l l }
+Computer Science Student Advisory Committee \textendash\ Chair, University of Utah & 2009 - Present \\
+Faculty Retention, Promotion, and Tenure Committee \textendash\ Student Chair, Utah & 2009 - Present \\
+Theatre Technical Director, Draper City Arts Council & 2006 - Present \\
+Theatre Technical Director, Skaggs Catholic Center & 2005 - 2010 \\
+Excellence in Technology, Juan Diego Catholic High School & 2007 \\
+University of Utah High School Programming Challenge- 2nd Place & 2007 \\
+Utah State High School LearnKey Challenge - 1st Place Linux+, 2nd Place Cisco Routing & 2007 \\
+\end{tabularx}
 
 \end{rSection}
 
@@ -77,7 +108,7 @@ Computer Science Student Advisory Committee- Chair & 2009 - Present \\Excellenc
 %	MEMBERSHIPS SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Related Coursework}
+\begin{rSection}{Memberships}
 
 IEEE- The Institute of Electrical and Electronics Engineers \\
 AAAI- The Association for the Advancement of Artificial Intelligence \\

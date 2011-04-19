@@ -6,6 +6,7 @@
 *.fls
 *.out
 *.toc
+*.cut
 
 ## Build tool auxiliary files:
 *.fdb_latexmk
