@@ -2,7 +2,7 @@
 
 \LoadClass[11pt,letterpaper]{article} % Font size and paper type
 
-\usepackage[left=0.5in,top=0.6in,right=0.5in,bottom=0.6in]{geometry} % Document margins
+\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry} % Document margins
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage[usenames,dvipsnames]{xcolor} % Colorize resume
 \usepackage{hyperref} % Clickable links
@@ -44,7 +44,7 @@
 \newcommand{\printname} {
   \begingroup
     \Large\bf\textcolor{accentColor}{\@name}\hfil
-    \medskip\break
+    \smallskip\break
   \endgroup
 }
 
@@ -52,7 +52,7 @@
 \newcommand{\printjobtitle} {
   \begingroup
     \large\bf\textcolor{textColor}{\@jobtitle}\hfil
-    \medskip\break
+    \smallskip\break
   \endgroup
 }
 
